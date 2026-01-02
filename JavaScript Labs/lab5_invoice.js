@@ -51,7 +51,6 @@ function generateFinalInvoice() {
     console.log("--------------------------------------------------");
 
     // 4. Final messages
-    console.log("Payment Successful");
     console.log("Invoice Generated");
     console.log("==================================================");
 }

@@ -7,8 +7,6 @@ function validateAndSendEmail() {
 
     // regex
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    // [^]+ = negation of 1 or more chars; \s = white space
-    //[^\s@]+ is repeated 3 times 1) start, 2) after @, 3) after .
 
     while (true) {
         // 1. Prompt for email

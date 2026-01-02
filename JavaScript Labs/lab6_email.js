@@ -33,9 +33,9 @@ function simulateEmailAndSaveInvoice() {
 
     // 3. Display invoice as JSON
     console.log("Invoice Data (JSON):");
-    console.log(JSON.stringify(invoiceData, null, 2));
+    console.log(JSON.stringify(invoiceData, null, 2)); //pretty indenting
 
-    // 4. Optional: Save to localStorage (browser only)
+    // 4. Save to localStorage
     if (typeof localStorage !== "undefined") {
         //store the stringified object into browsers local storage
         localStorage.setItem("karazon_invoice_" + invoiceNumber, JSON.stringify(invoiceData));

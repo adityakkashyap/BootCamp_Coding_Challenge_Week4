@@ -9,7 +9,7 @@ let totalWithTax = 0;
 
 function applyGSTAndPlatformFee() {
 
-    // 1. Use discounted total from Lab 2
+    // 1. discounted total from Lab 2
     if (typeof discountedTotal !== "number" || discountedTotal <= 0) {
         console.log("Invalid discounted total. Cannot apply GST and platform fee.");
         return;

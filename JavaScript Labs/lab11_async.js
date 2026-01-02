@@ -1,18 +1,3 @@
-// Lab 11: Asynchronous Payment Confirmation
-/*
-NOTES: Async allows non-blocking 
-async function always returns a promise
-
-Promise = represents a value that will be available in the future.
-It has 3 states:
-    PENDING → still processing
-    FULFILLED → success
-    REJECTED → failure
-Why:
-    You don’t get the result immediately
-    You need a placeholder for future data
-*/
-
 let paymentStatus = "PENDING";
 let transactionResult = {};
 
@@ -27,7 +12,7 @@ function simulatePaymentProcessing(paymentMode) {
         // Simulate delay 
         setTimeout(() => {
 
-            // Simulate success for demo
+            // Simulate success
             paymentStatus = "SUCCESS";
             // receipt of the payment
             transactionResult = {
@@ -62,3 +47,36 @@ async function confirmPaymentAsync() {
         console.log("Payment process completed.");
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Lab 11: Asynchronous Payment Confirmation
+/*
+NOTES: Async allows non-blocking 
+async function always returns a promise
+
+Promise = represents a value that will be available in the future.
+It has 3 states:
+    PENDING → still processing
+    FULFILLED → success
+    REJECTED → failure
+Why:
+    You don’t get the result immediately
+    You need a placeholder for future data
+*/
