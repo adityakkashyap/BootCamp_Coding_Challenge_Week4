@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head> 
+
+<body>
+    <header class="sticky top-0 z-50">
+        <h1>Learning Portal</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="text-xl font-bold mb-1 text-center">
+                Login
+            </h2>
+
+            <form action="dashboard.html">
+                <label>Username</label>
+                <input type="text">
+
+                <label>Password</label>
+                <input type="password"> <!-- masked -->
+
+                <!-- tailwind -->
+                <button
+                    type="submit"
+                    class="w-full mt-6 bg-blue-500 text-white py-2 rounded hover:bg-blue-700">
+                    <!-- py-2 padding vertical -->
+                    Login
+                </button>
+
+            </form>
+        </section>  
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Learning Portal</p>
+    </footer>
+</body>
+
+</html>

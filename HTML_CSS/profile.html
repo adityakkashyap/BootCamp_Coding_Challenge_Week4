@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <header class="sticky top-0 z-50">
+        <!-- <nav>
+            <h1>Learning Portal</h1>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav> -->
+        <nav class="flex flex-col md:flex-row md:justify-between md:items-center">
+            <h1 class="text-xl font-semibold mb-2 md:mb-0">
+                Learning Portal
+            </h1>
+
+            <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card shadow-md max-w-xl mx-auto">
+            <h2 class="text-2xl font-semibold mb-1 text-center">John Doe</h2>
+            <p class="text-center text-gray-600 mb-6">Computer Science Student</p>
+
+            <article class="mb-6">
+                <h3 class="font-semibold mb-2">Profile Image</h3>
+
+                <img src="img/profile.jpg" class="mx-auto rounded shadow mb-2" width="100">
+
+                <input type="file" class="w-full border rounded px-2 py-1">
+            </article>
+
+            <article class="mb-6">
+                <h3 class="font-semibold mb-1">Education</h3>
+                <p>B.Tech in Computer Science</p>
+            </article>
+
+            <article class="mb-6">
+                <h3 class="font-semibold mb-1">Short Bio</h3>
+                <p class="text-gray-700">
+                    Passionate about web development.
+                </p>
+            </article>
+
+            <article class="mt-6">
+                <h3 class="font-semibold mb-1">GitHub</h3>
+                <a href="https://github.com/your-username"
+                target="_blank"
+                class="text-blue-600 hover:underline">
+                    https://github.com/johndoe
+                </a>
+            </article>
+
+            <article class="mt-6">
+                <h3 class="font-semibold">Skills</h3>
+                <div class="flex gap-2 mt-2">
+                    <span class="bg-gray-200 px-2 py-1 rounded text-sm">HTML</span> <!-- in-line ele -->
+                    <span class="bg-gray-200 px-2 py-1 rounded text-sm">CSS</span>
+                    <span class="bg-gray-200 px-2 py-1 rounded text-sm">JavaScript</span>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Learning Portal</p>
+    </footer>
+
+</body>
+</html>

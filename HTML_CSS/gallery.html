@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <header class="sticky top-0 z-50">
+        <!-- <nav>
+            <h1>Learning Portal</h1>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav> -->
+        <nav class="flex flex-col md:flex-row md:justify-between md:items-center">
+            <h1 class="text-xl font-semibold mb-2 md:mb-0">
+                Learning Portal
+            </h1>
+
+            <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2 class="text-xl font-semibold mb-6">Photo Gallery</h2>
+
+            <div class="gallery grid grid-cols-1 md:grid-cols-2 gap-6">
+                <figure class="text-center">
+                    <!-- mx-atuo = auto margin on x axis -->
+                    <img src="img/img2.avif" class="mx-auto rounded shadow" width="200">
+                    <figcaption class="mt-2 text-sm text-gray-600">
+                        Picture 1
+                    </figcaption>
+                </figure>
+
+                <figure class="text-center">
+                    <img src="img/img3.avif" class="mx-auto rounded shadow" width="200">
+                    <figcaption class="mt-2 text-sm text-gray-600">
+                        Picture 2
+                    </figcaption>
+                </figure>
+            </div>
+
+        </section>
+    </main>
+    
+
+    <footer>
+        <p>&copy; 2026 Learning Portal</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <header class="sticky top-0 z-50">
+        <!-- <nav>
+            <h1>Learning Portal</h1>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav> -->
+        <!-- default is flex-col (vertical) md - desktops use horizontal-->
+        <nav class="flex flex-col md:flex-row md:justify-between md:items-center">
+            <h1 class="text-xl font-semibold mb-2 md:mb-0">
+                Learning Portal
+            </h1>
+
+            <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+           
+            <!-- <section class="card shadow-md">
+                <h2 class="text-xl font-semibold mb-3">Module 1</h2>
+
+                <article>
+                    <h3 class="font-medium mb-2">Unit 1</h3>
+                    list-disc = bullets
+                    <ul class="list-disc ml-5 space-y-1">
+                        <li>Topic 1</li>
+                        <li>Topic 2</li>
+                    </ul>
+                </article>
+
+            </section> -->
+
+            <section class="card shadow-md">
+                <h2 class="text-xl font-semibold mb-4">Topics Explorer</h2>
+
+                <!-- details makes expandable css elements -->
+                <details open>
+                    <!-- summary is for clickable headers -->
+                    <summary class="font-semibold cursor-pointer">
+                        Module 1: HTML Basics
+                    </summary>
+
+                    <details class="ml-4 mt-2">
+                        <summary class="font-medium cursor-pointer">
+                            Unit 1: Introduction
+                        </summary>
+
+                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                            <li>What is HTML</li>
+                            <li>Basic Tags</li>
+                            <li>Document Structure</li>
+                        </ul>
+                    </details>
+                </details>
+            </section>
+
+            <!-- Progress Card -->
+            <!-- <section class="card shadow-md">
+                <h2 class="text-xl font-semibold mb-3">Progress</h2>
+                <p>Labs Completed: 3 / 10</p>
+            </section> -->
+
+            <section class="card shadow-md">
+                <h2 class="text-xl font-semibold mb-4">Labs Tracker</h2>
+
+                <!-- Grid header -->
+                <div class="grid grid-cols-3 font-semibold mb-2">
+                    <span>Lab</span>
+                    <span>Status</span>
+                    <span>Progress</span>
+                </div>
+
+                <!-- Grid rows -->
+                <div class="grid grid-cols-3 gap-y-3">
+                    <span>HTML Basics</span>
+                    <span class="text-green-600 font-medium">Completed</span>
+                    <span>100%</span>
+
+                    <span>CSS Basics</span>
+                    <span class="text-yellow-600 font-medium">In Progress</span>
+                    <span>60%</span>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Learning Portal</p>
+    </footer>
+
+</body>
+</html>
